@@ -1,0 +1,92 @@
+
+.pencilArt {
+    height: auto;
+    width: 20%;
+    border-radius: 20%;
+    flex-flow: column; 
+}
+.App{
+    display: flex;
+    
+    
+
+}
+.greeting{
+    font-size: 400%;
+    font-weight: 200%;
+    
+    margin: 5%;
+    
+    color: transparent;
+    background: linear-gradient(to right,rgb(248, 245, 245),rgb(249, 8, 249)) ;
+    -webkit-background-clip: text;
+    
+    
+    color: transparent;
+}
+.mis{
+    font-size:200%;
+    font-family: sans-serif;
+    font-style: oblique;   
+}
+.summ{
+    background-color: rgb(49, 233, 233);
+}
+/* ///////////////////////////////////// from ui verse */
+/* From Uiverse.io by ShrinilDhorda */ 
+/* From Uiverse.io by barisdogansutcu */ 
+/* From Uiverse.io by ShrinilDhorda */ 
+.btn {
+    
+    margin: 3rem 3rem 3rem 2rem;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+   /* //////////////////////////////////// */
+   .txt1{
+    margin: 3rem 2rem ;
+    font-size: 200%;
+    color: transparent;
+    text-align: center;
+    margin-top: 5%;
+    background: linear-gradient(to right,rgb(174, 6, 155),rgb(225, 225, 9));
+    -webkit-background-clip:text ;
+   }
+   
+
+   .waysToReach{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    justify-content: space-around;
+   }
+   .openTxt{
+    text-align:center ;
+    text-shadow: 20%;
+    font-size: 150%;
+    color: rgb(240, 8, 109);
+   }
+   

@@ -1,0 +1,87 @@
+/* locationMarker.css */
+.Address{
+
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+}
+.AddressName{
+  font-size: 100%;
+  color: rgb(249, 248, 250);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-align: justify;
+  margin-left: 1.5rem;
+}
+/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by Tiagoadag */ 
+.card {
+  width: 290px;
+  height: fit-content;
+  background-image: linear-gradient(163deg, blue,purple 100%);
+  border-radius: 10px;
+  transition: all .3s;
+  
+  border-color: white;
+ }
+ 
+ .card2 {
+  width: 290px;
+  height: fit-content;
+  background-color:  rgb(41, 39, 39);
+  border-radius: 9px;
+  
+  transition: all .2s;
+ }
+ 
+ .card2:hover {
+  transform: scale(0.99);
+  border-radius: 10.5px;
+ }
+ 
+ .card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(251, 2, 127, 0.3);
+ }
+ /* locatio loader */
+.Address .loader {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  
+  margin:auto;
+  transform: rotate(45deg);
+}
+.Address .loader::before, 
+.Address .loader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(circle 8px at 50% 50%, red 94%, rgb(230, 92, 92), blue);
+}
+
+.Address .loader::after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+/* WholeAddress */
+.WholeAddress{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:0.8rem;
+  justify-content:space-evenly;
+  margin: 2rem;
+  
+  
+}
