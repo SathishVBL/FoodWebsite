@@ -1,4 +1,50 @@
-p{
-    color: white;
+/* DishList.css */
+
+
+.dish-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center;
+    border: pink;
     
 }
+
+.dish-item {
+    
+    background: url(C:\Users\vsath\OneDrive\Desktop\fullStackProjects\foodtruck\public\dine-out.jpg);
+    background-size: cover;
+    width: 200px; /* Set a width for each dish item */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure image stays within the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a smooth effect */
+    text-align: center; /* Center the text */
+    background-color: #fff; /* White background for each dish item */
+    padding: 10px;
+    color: white;
+}
+
+.dish-image {
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Match the rounded corners of the container */
+}
+.close-button{
+    margin: 0px;
+    margin-left: 95%;
+    margin-top: 0px;
+    align-items:end;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+.close-button p{
+    font-size:30px;
+    margin: 0px;
+    margin-left:0.2rem;
+    margin-right: 0.2rem;
+    color: red;
+}
+  
