@@ -30,6 +30,7 @@
     font-style: oblique;   
 }
 .summ{
+    
     background-color: rgb(49, 233, 233);
 }
 /* ///////////////////////////////////// from ui verse */
@@ -89,4 +90,10 @@
     font-size: 150%;
     color: rgb(240, 8, 109);
    }
-   
+   a{
+    color: white;
+    text-decoration: none;
+   }
+   html {
+    scroll-behavior: smooth;
+  }

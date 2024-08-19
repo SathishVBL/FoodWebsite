@@ -9,6 +9,7 @@
     justify-content: center;
     border: pink;
     
+    
 }
 
 .dish-item {
@@ -23,6 +24,7 @@
     background-color: #fff; /* White background for each dish item */
     padding: 10px;
     color: white;
+    margin-bottom: 1rem;
 }
 
 .dish-image {
@@ -47,4 +49,200 @@
     margin-right: 0.2rem;
     color: red;
 }
+.map-intro{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-left: 1rem;
+}
+
+
+
+article{
+    margin: 3rem;
+    color: transparent;
+    background:linear-gradient(to right,rgb(233, 7, 154),purple);
+    -webkit-background-clip: text;
+}
+.whole2{
+    background: linear-gradient(to bottom,white,rgb(132, 207, 237));
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.table-book-form{
+    display: flex;
+    justify-content: center;
+}
+/* /book table csss */
+/* From Uiverse.io by Yaya12085 */ 
+.book-table-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .book-table-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+  .book-table-form .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .book-table-form .group input,
+  .book-table-form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .book-table-form .group input:placeholder-shown+ label, .book-table-form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .book-table-form .group input:focus,
+  .book-table-form .group textarea:focus {
+    border-color: #3366cc;
+  }
+  
+  .book-table-form .group input:focus+ label, .book-table-form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .book-table-form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .book-table-form button {
+    background-color: #3366cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .book-table-form button:hover {
+    background-color: #27408b;
+  }
+  /* book now button  */
+  /* From Uiverse.io by catraco */ 
+.btn-class-name {
+    display: flex;
+    justify-content: center;
+    --primary: 255, 90, 120;
+    --secondary: 150, 50, 60;
+    width: 60px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    outline: 10px solid rgb(var(--primary), .5);
+    border-radius: 100%;
+    position: relative;
+    transition: .3s;
+  }
+  
+  .btn-class-name .back {
+    background: rgb(var(--secondary));
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-class-name .front {
+    background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+    box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+    border-radius: 100%;
+    position: absolute;
+    border: 1px solid rgb(var(--secondary));
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    transform: translateY(-15%);
+    transition: .15s;
+    color: rgb(var(--secondary));
+  }
+  
+  .btn-class-name:active .front {
+    transform: translateY(0%);
+    box-shadow: 0 0;
+  }
+  /* /mine */
+  .img-table-form {
+    position: relative;
+    padding: 20px;
+    /* background-image: url('src/images/foodtruck.jpg'); */
+    background: pink; /* Background color */
+    border-radius: 0 0 20px 20px; /* Rounded corners at the bottom */
+    overflow: hidden;
+}
+
+.img-table-form::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Adjusts the position of the wave */
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust the height of the wave */
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjMiPgogIDxwYXRoIGQ9Ik0wIDIwQzIwMCA1MCA4MDAgMCAxMDAwIDIwIi8+CiAgPHBhdGggZD0iTTAgMjBDMjAwLTYgODAwIDYgMTAwMCAyMCIvPgo8L3N2Zz4=') no-repeat top;
+    background-size: cover;
+    z-index: 1;
+}
+.aluthu-btn{
+    font-size: 20px;
+    color: blue;
+}
+.btn-class-name{
+    margin: 1rem 2rem;
+}
+
   

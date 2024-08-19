@@ -9,7 +9,7 @@
 } */
 
 .RestaurentAddresCard {
-    width: 80%;
+    width: 95%;
     height: fit-content;
     border-radius: 30px;
     background: #212121;
@@ -21,27 +21,36 @@
                 
    }
 .InsideCard{
-    color: white;
+    color: rgb(15, 14, 14);
     display: flex;
+  justify-content: space-evenly;
+    /* background-color: white; */
+    /* background: linear-gradient(to right,white,rgb(221, 9, 228)); */
+    border-radius: inherit;
+    /* background-image: url(C:\Users\vsath\OneDrive\Desktop\fullStackProjects\foodtruck\public\homepage-hero-bg-img.jpg); */
+    background-size: cover;
     
 }
    
 .Image{
-    height: 50px;
-    width: 50px;
+    height: 350px;
+    width: 350px;
     border-radius: 15px;
-    margin-top: 2.5rem;
-    margin-right: 1rem;
+    margin: 1rem;
     
 }
 
 .AddressName{
-    font-size: 100%;
-    color: rgb(249, 248, 250);
+    font-size: 20px;
+    color: rgb(11, 11, 11);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     text-align: justify;
     margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 0rem;
+    
   }
   /* ExploreMore */
   /* From Uiverse.io by iZOXVL */ 
@@ -58,7 +67,8 @@
     position: relative;
     overflow: hidden;
     font-weight: bold;
-    
+    /* margin-bottom: 1rem; */
+    margin: 2rem;
   }
   
   .boton-elegante::after {
@@ -89,9 +99,12 @@
     width: inherit;
     background-color: white;
     height: auto;
-    margin: 2rem;
-    padding: 1rem 2rem 3rem 2rem ;
+    margin: 1rem;
+    padding: 1rem 0rem 0rem 0rem ;
     border-radius: 30px;
     
 }
-  
+iframe{
+  border-radius: 30px;
+  flex-flow: row-reverse;
+}

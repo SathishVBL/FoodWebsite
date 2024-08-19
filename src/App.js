@@ -4,6 +4,7 @@ import sty from './cssFiles/App.css'
 import Address from './Address';
 import RestaurentAddress from './RestaurentAddress';
 import CaterForm from './CaterForm';
+import Footer from './Footer';
 import { useState } from 'react'
 
 
@@ -45,20 +46,23 @@ function App() {
       <div className='waysToReach'>
         
         <button class="btn" onClick={onClickHandlerTrackTruck}>
-          {/* <a href='#showPlaces'>TRACK TRUCK</a> */}
-          TRACK TRUCK
+          <a href='#showPlaces'>TRACK TRUCK</a>
+          {/* TRACK TRUCK */}
         </button>
        
         <button class="btn" onClick={onClickHandlerFindRetaurant}>
-          SHOW RESTAURANT
+        <a href='#showPlaces'>FIND RESTAURANT</a>
+          {/* SHOW RESTAURANT */}
         </button>
         <button class="btn" onClick={onClickHannlderCaterForm}>
-          CATER WITH US
+        <a href='#showPlaces'>CATER WITH US</a>
+          {/* CATER WITH US */}
         </button>
 
 
       </div>
       <div  id='showPlaces'>{showContentOnBtnClick}</div>
+      <Footer/>
       
 
     </div>
