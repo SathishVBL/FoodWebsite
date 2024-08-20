@@ -62,10 +62,9 @@ function FoodMenu(props){
     };
 
     return (
-        <div className="whole2" style={{backgroundImage:"url('/bg-img2.jpg')"}}>
-            <div className="map-intro">
+        <div className="whole2" >
             
-                
+            <div className="map-intro">
             
             <article>Welcome to our restaurant, where tradition meets flavor. 
                 Established in the heart of the city over two decades ago, 
