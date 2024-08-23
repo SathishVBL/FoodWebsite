@@ -17,6 +17,8 @@ import './Rating.css'
         <input name="rating" value={1} id="star1" type="radio"/>
         <label for="star1"></label>
 
+        
+
     </div>);
  }
  export default Rating;

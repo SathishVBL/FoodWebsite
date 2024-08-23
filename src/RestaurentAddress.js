@@ -16,29 +16,29 @@ function RestaurentAddress(props){
     const addresses={
         IDtvm1:{street: "Navappalayam",city: "Tiruvannamalai",state: "Tamil nadu",pin:"606901",
             menu:[
-                {name:"Parottaa",   amt:20,  offer:20,  dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",  image:"/parotta_image.webp"
+                {name:"Parottaa",   amt:200,  offer:20,  dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",  image:"/parotta_image.webp"
                 },
-                {name:"Mutton Chukka",    amt:15,    offer:15,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/mutton_image.jpg"
+                {name:"Mutton Chukka",    amt:150,    offer:15,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/mutton_image.jpg"
                 },
-                {name:"Peper Chicken",    amt:10,    offer:10,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/paneer_image.jpg"
+                {name:"Peper Chicken",    amt:100,    offer:10,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/paneer_image.jpg"
                 }]
         },
         IDmdri1:{street: "Melur",city: "Madurai",state: "Tamil nadu",pin:"606901",
             menu:[
-                {name:"Biriyani",   amt:20,  offer:20,  dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",  image:"/biriyani2_image.jpg"
+                {name:"Biriyani",   amt:250,  offer:20,  dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",  image:"/biriyani2_image.jpg"
                 },
-                {name:"Full meal",    amt:15,    offer:15,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/full_meals_image.jpg"
+                {name:"Full meal",    amt:160,    offer:15,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/full_meals_image.jpg"
                 },
-                {name:"Panner Masala",    amt:10,    offer:10,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/paneer_image.jpg"
+                {name:"Panner Masala",    amt:140,    offer:10,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/paneer_image.jpg"
                 }]
         },
         IDmdri2:{street: "Melur",city: "Madurai",state: "Tamil nadu",pin:"606901",
             menu:[
-                {name:"Biriyani",   amt:20,  offer:20,  dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",  image:"/biriyani2_image.jpg"
+                {name:"Coffee",   amt:40,  offer:20,  dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",  image:"/food-images/coffee2.jpg"
                 },
-                {name:"Full meal",    amt:15,    offer:15,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/full_meals_image.jpg"
+                {name:"Masal Dosa",    amt:149,    offer:15,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/food-images/masal-dosa.jpg"
                 },
-                {name:"Panner Masala",    amt:10,    offer:10,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/paneer_image.jpg"
+                {name:"Panner Masala",    amt:120,    offer:10,    dicrp:"Delicious, fresh, and flavorful dishes that blend tradition with modern culinary creativity.",    image:"/paneer_image.jpg"
                 }]
         }
     };
@@ -58,15 +58,10 @@ const onClickExploreMore=(menu,city)=>{
                 <div className="city-closebtn">
                     <p className="at">At {city}</p>
                     <button className="close-button" onClick={onClickClose}><p>X</p></button>
-                </div>
-
-                
+                </div> 
                 <FoodMenu menu={menu} />
                 </div>
-    ));
-
-    
-        
+    ));  
         console.log(menu);
    };
 
@@ -82,29 +77,23 @@ const onClickExploreMore=(menu,city)=>{
                     <img className="Image" src={`/restaurantImages/${id}.webp`} alt ="Restaurant-Image"/>
                     <p className="smallAbout">{aboutRestaurant[id].about}</p>    
                         <div className="AddressName-iframe">
-                            <div className="AddressName">
+                            <div className="AddressName1">
                                 
                                 <p>{adrs.street}</p>
                                 <p>{adrs.city}</p>
                                 <p>{adrs.state}</p>
                                 <p>{adrs.pin}</p>
-                                <OverAllRating className="overallrating"/>
+                                
                                 </div>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1795.4086450821123!2d78.97934761545717!3d12.507949749139332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1723954459516!5m2!1sen!2sin"
                                     ></iframe>
                         </div>
+                        <OverAllRating className="overallrating"/>
                         <button className="boton-elegante" onClick={()=>onClickExploreMore(adrs.menu,adrs.city)}>Explore More </button>
-                        
-                    
-                    
-                    </div>
-                    
+                     </div>
             </div>
             
             ))}
-            
-            
-            
             
         </div>
         <div id='showMenuOnExploreMore'>{showMenuOnExploreMore}</div>

@@ -8,16 +8,29 @@
   margin-right: 2rem;
   
 }
-.AddressName{
-  font-size: 100%;
-  color: rgb(249, 248, 250);
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  text-align: justify;
-  margin-left: 1.5rem;
+.AddressName {
+  text-align: left;
 }
-/* From Uiverse.io by adamgiebl */ 
-/* From Uiverse.io by Tiagoadag */ 
+.AddressName p {
+  margin: 8px 0;
+  margin-left: 1rem;
+  font-size: 14px;
+  color: #555;
+}
+
+.AddressName .street {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.AddressName .city,
+.AddressName .state,
+.AddressName .pin {
+  font-size: 14px;
+  color: #666;
+}
+
 .card {
   width: 290px;
   height: fit-content;
@@ -31,7 +44,7 @@
  .card2 {
   width: 290px;
   height: fit-content;
-  background-color:  rgb(41, 39, 39);
+  background: linear-gradient(to right,skyblue,skyblue,gray);
   border-radius: 9px;
   
   transition: all .2s;
@@ -78,10 +91,84 @@
 /* WholeAddress */
 .WholeAddress{
   display:grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap:0.8rem;
   justify-content:space-evenly;
   margin: 2rem;
   
   
+}
+/* calendar button */
+/* From Uiverse.io by andrew-demchenk0 */ 
+.cal-button {
+  
+  margin-left: 2%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 201px;
+  border: none;
+  background: #FF342B;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable {
+  line-height: 22px;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.cal-button:hover {
+  background: #e52e26;
+}
+
+.cal-button:hover .svg-icon {
+  animation: slope 0.5s linear infinite;
+}
+
+@keyframes slope {
+  0% {
+  }
+
+  50% {
+    transform: rotate(70deg);
+  }
+
+  100% {
+  }
+}
+.cal-button-txt{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  color: white;
+}
+.showSchedule{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:repeat(4,1fr) ;
+  color: rgb(9, 9, 9);
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 1rem;
+ 
+}
+.showSchedule1{
+  width: 290px;
+  height: fit-content;
+  background:radial-gradient(skyblue,skyblue,skyblue,black);
+  border-radius: 20px;
+  padding: 1rem;
+  
+  text-align: center;
+}
+.showSchedule1 a{
+  color: blue;
 }

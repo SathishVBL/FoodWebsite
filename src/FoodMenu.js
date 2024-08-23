@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import './FoodMenu.css';
+import Rating from "./Rating";
+import OverAllRating from "./OverAllRating";
 import img from './images/homepage-hero-bg-img.jpg';
 function FoodMenu(props){
     
@@ -76,34 +78,49 @@ function FoodMenu(props){
             <div className="dish-list">
             
                 {menu.map((m, index) => (
-                    <div key={index} className="dish-item">
+                    <div key={index} className="dish-item" style={{background:"url('/dine-out.jpg')",backgroundSize:"cover"}}>
                         <img src={m.image} className="dish-image" />
                         <h3>{m.name}</h3>
-                        <p>{m.dicrp}</p>
-                        <p>{m.amt}</p>
-                        <p>{m.offer}</p>
+                        <p >{m.dicrp}</p>
+                        <div  className="amt-offer">
+                                <p className="amt">₹ {m.amt}</p>
+                            
+                                <p >-{m.offer}<span >%</span></p>
+                            </div>
+                        
+                        <OverAllRating/>
                     </div>
                 ))}
             </div>
             
+
+            <div className="images">
+                    <img src="/dine-out.jpg"/>
+                    <img src="/restaurantImages/coffee.jpg"/>
+                    <img src="/restaurantImages/IDmdri1.avif"/>
+                    <img src="/restaurantImages/IDmdri2.webp"/>
+                    <img src="/restaurantImages/IDtvm1.webp"/>
+                    <img src="/dine-out.jpg"/>
+                    <img src="/restaurantImages/coffee.jpg"/>
+                    <img src="/restaurantImages/IDmdri1.avif"/>
+                    <img src="/restaurantImages/IDmdri2.webp"/>
+                    <img src="/restaurantImages/IDtvm1.webp"/>
+                    </div>
+
                 <p className="aluthu-btn">Click Here to Book Table</p>
                 <button class="btn-class-name" onClick={onClickBtnTableForm}>
                     <span class="back"></span>
                     <span class="front"></span>
                     <a href="#form"></a>
                 </button>
-            <div className="img-table-form" >
-                {/* <img src="/restaurant-image2.jpeg"/> */}
+            <div className="img-table-form" style={{background: "url('/restaurantImages/trns-img3.png') no-repeat",
+                                                        backgroundSize: "contain",backgroundPosition: "left"}}>
+                
                 { canShowForm && showTableForm}
-                {/* <img src="/restaurant-image2.jpeg"/> */}
+                
+                
             </div>
             
-            
-
-
-
-            
-        
         </div>
     );
 }

@@ -39,7 +39,7 @@
 
 .social-icon__link {
   font-size: 2rem;
-  color: #fff;
+  color: #ec0808;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
@@ -110,5 +110,8 @@
     background-positon-x: 0px;
   }
 }
-
+.dialogue{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
   

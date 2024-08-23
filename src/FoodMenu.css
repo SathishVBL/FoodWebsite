@@ -5,7 +5,8 @@
     
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between items */
+    gap: 20px;
+    background: radial-gradient(to center,white,black);
     justify-content: center;
     border: pink;
     
@@ -14,9 +15,10 @@
 
 .dish-item {
     
-    background: url(C:\Users\vsath\OneDrive\Desktop\fullStackProjects\foodtruck\public\dine-out.jpg);
+   
     background-size: cover;
-    width: 200px; /* Set a width for each dish item */
+    width: 200px; 
+    
     border-radius: 15px; /* Rounded corners */
     overflow: hidden; /* Ensure image stays within the border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a smooth effect */
@@ -45,13 +47,17 @@
 article{
     margin: 3rem;
     color: transparent;
-    background:linear-gradient(to right,rgb(233, 7, 154),purple);
+    background:linear-gradient(to right,rgb(2, 189, 27),rgb(240, 12, 240));
     -webkit-background-clip: text;
 }
 
 .table-book-form{
     display: flex;
-    justify-content: center;
+    margin-right: 15%;
+    /* margin-left: 10%; */
+    justify-content: end;
+    
+
 }
 /* /book table csss */
 /* From Uiverse.io by Yaya12085 */ 
@@ -75,6 +81,7 @@ article{
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
+    
   }
   
   .group {
@@ -197,25 +204,20 @@ article{
   }
   /* /mine */
   .img-table-form {
+    height: fit-content;
     position: relative;
-    padding: 20px;
-    /* background-image: url('src/images/foodtruck.jpg'); */
-    background: pink; /* Background color */
-    border-radius: 0 0 20px 20px; /* Rounded corners at the bottom */
+    padding: 20px; 
     overflow: hidden;
+    
+   
 }
-
-.img-table-form::before {
-    content: "";
-    position: absolute;
-    top: -20px; /* Adjusts the position of the wave */
-    left: 0;
-    width: 100%;
-    height: 60px; /* Adjust the height of the wave */
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjMiPgogIDxwYXRoIGQ9Ik0wIDIwQzIwMCA1MCA4MDAgMCAxMDAwIDIwIi8+CiAgPHBhdGggZD0iTTAgMjBDMjAwLTYgODAwIDYgMTAwMCAyMCIvPgo8L3N2Zz4=') no-repeat top;
-    background-size: cover;
-    z-index: 1;
+.images img{
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+  border-radius: 20%;
 }
+/*  */
 .aluthu-btn{
     font-size: 20px;
     color: blue;
@@ -226,6 +228,24 @@ article{
 .whole2{
   
   background: linear-gradient(to bottom,white,rgb(132, 207, 237));
+}
+.amt-offer{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+.amt-offer span{
+  font-size: 20px;
+  /* color: blue; */
+  background: linear-gradient(to right,rgb(11, 252, 79),rgb(170, 230, 51));
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.amt{
+  font-size: 30px;
+  background: linear-gradient(to right,rgb(245, 3, 188),rgb(3, 169, 246));
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
   
